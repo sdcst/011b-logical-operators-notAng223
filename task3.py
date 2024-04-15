@@ -24,3 +24,13 @@ Enter a number: 5
 Enter a number: 4.0
 4.0 is a positive integer
 """
+
+number = float(input("enter a number: "))
+
+is_positave_bool = number>0
+is_int_boot = float(int(number))==number
+
+if is_positave_bool and is_int_boot:
+    print("is a positave interger!")
+else:
+    print("NOT a postive interger")

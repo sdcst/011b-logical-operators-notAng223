@@ -26,3 +26,13 @@ Enter a number: 16
 16 is not frue
 """
 
+number = int(input("enter a interger: "))
+
+is_8_div = number%8==0
+is_6_div = number%6==0
+
+if is_6_div and (not is_8_div):
+    print("NUMBER IS FRUE!!!")
+else:
+    print("NOT FRUE!!!!")
+

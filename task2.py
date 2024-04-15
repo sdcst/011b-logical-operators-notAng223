@@ -31,3 +31,19 @@ Enter a number: 8
 Enter a number: 64
 64 is both a perfect square and divisible by 2.
 """
+round_off_const=0.001
+number = float(input("enter a number: "))
+
+
+is_square = abs(int(number**0.5)-number**0.5)<round_off_const
+# divisable by 2 AND a interger
+is_divisable = (int(number)%2==0) and (abs(float(int(number))-number)<round_off_const)
+
+if is_square and is_divisable:
+    print("divisable by 2 and a perfect square")
+elif is_divisable:
+    print("is divisable by 2, not a perfect square")
+elif is_square:
+    print("a perfect square, but not divisable by 2")
+else:
+    print("neither a perfact square or divisable by 2")

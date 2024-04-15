@@ -23,3 +23,9 @@ You are not a VIP.
 """
 
 VIPNames = ("Guile","Blanka","Christine","Carol","Richard","Daniel","Chun-Li")
+name = input("name? (MUST BE CAPITALIZED!): ")
+
+if name in VIPNames:
+    print("hello vip member, "+VIPNames[VIPNames.index(name)])
+else:
+    print("YOU ARE NOT A VIP!!!")
